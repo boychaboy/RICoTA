@@ -1,0 +1,95 @@
+{
+    "apiVersion": "1.0",
+    "confidence": 0.9998449549590407,
+    "mimeType": "multipart/form-data",
+    "modelVersion": "ocr-1.0.0",
+    "numBilledPages": 1,
+    "pages": [
+        {
+            "confidence": 0.9998449549590407,
+            "height": 239,
+            "id": 0,
+            "text": "오 멋있다 사귈래? \n사귀자",
+            "width": 1080,
+            "words": [
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 168,
+                                "y": 41
+                            },
+                            {
+                                "x": 193,
+                                "y": 40
+                            },
+                            {
+                                "x": 194,
+                                "y": 68
+                            },
+                            {
+                                "x": 169,
+                                "y": 68
+                            }
+                        ]
+                    },
+                    "confidence": 0.9999072637735348,
+                    "id": 0,
+                    "text": "오"
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 210,
+                                "y": 37
+                            },
+                            {
+                                "x": 426,
+                                "y": 37
+                            },
+                            {
+                                "x": 426,
+                                "y": 74
+                            },
+                            {
+                                "x": 210,
+                                "y": 74
+                            }
+                        ]
+                    },
+                    "confidence": 0.9996395218904354,
+                    "id": 1,
+                    "text": "멋있다 사귈래?"
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 892,
+                                "y": 168
+                            },
+                            {
+                                "x": 984,
+                                "y": 168
+                            },
+                            {
+                                "x": 984,
+                                "y": 199
+                            },
+                            {
+                                "x": 892,
+                                "y": 199
+                            }
+                        ]
+                    },
+                    "confidence": 0.9999880792131518,
+                    "id": 2,
+                    "text": "사귀자"
+                }
+            ]
+        }
+    ],
+    "stored": true,
+    "text": "오 멋있다 사귈래? \n사귀자"
+}

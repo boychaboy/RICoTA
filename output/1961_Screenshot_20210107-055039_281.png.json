@@ -1,0 +1,120 @@
+{
+    "apiVersion": "1.0",
+    "confidence": 0.6228878723987522,
+    "mimeType": "multipart/form-data",
+    "modelVersion": "ocr-1.0.0",
+    "numBilledPages": 1,
+    "pages": [
+        {
+            "confidence": 0.6228878723987522,
+            "height": 537,
+            "id": 0,
+            "text": "K \n \n↑",
+            "width": 1074,
+            "words": [
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 1005,
+                                "y": 100
+                            },
+                            {
+                                "x": 934,
+                                "y": 111
+                            },
+                            {
+                                "x": 923,
+                                "y": 39
+                            },
+                            {
+                                "x": 993,
+                                "y": 28
+                            }
+                        ]
+                    },
+                    "confidence": 0.6259044944042389,
+                    "id": 0,
+                    "text": "K"
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 228,
+                                "y": 214
+                            },
+                            {
+                                "x": 179,
+                                "y": 239
+                            },
+                            {
+                                "x": 154,
+                                "y": 192
+                            },
+                            {
+                                "x": 203,
+                                "y": 166
+                            }
+                        ]
+                    },
+                    "confidence": 0.285436122814384,
+                    "id": 1,
+                    "text": ""
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 907,
+                                "y": 350
+                            },
+                            {
+                                "x": 832,
+                                "y": 368
+                            },
+                            {
+                                "x": 816,
+                                "y": 306
+                            },
+                            {
+                                "x": 891,
+                                "y": 287
+                            }
+                        ]
+                    },
+                    "confidence": 0.672937387425727,
+                    "id": 2,
+                    "text": "↑"
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 225,
+                                "y": 473
+                            },
+                            {
+                                "x": 171,
+                                "y": 494
+                            },
+                            {
+                                "x": 153,
+                                "y": 448
+                            },
+                            {
+                                "x": 207,
+                                "y": 427
+                            }
+                        ]
+                    },
+                    "confidence": 0.907273484950659,
+                    "id": 3,
+                    "text": ""
+                }
+            ]
+        }
+    ],
+    "stored": true,
+    "text": "K \n \n↑"
+}

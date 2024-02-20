@@ -1,0 +1,70 @@
+{
+    "apiVersion": "1.0",
+    "confidence": 0.4997231705697015,
+    "mimeType": "multipart/form-data",
+    "modelVersion": "ocr-1.0.0",
+    "numBilledPages": 1,
+    "pages": [
+        {
+            "confidence": 0.4997231705697015,
+            "height": 95,
+            "id": 0,
+            "text": "1+1은? \n너무포괄적이다��",
+            "width": 500,
+            "words": [
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 425,
+                                "y": 14
+                            },
+                            {
+                                "x": 467,
+                                "y": 14
+                            },
+                            {
+                                "x": 467,
+                                "y": 28
+                            },
+                            {
+                                "x": 425,
+                                "y": 28
+                            }
+                        ]
+                    },
+                    "confidence": 0.999446341139403,
+                    "id": 0,
+                    "text": "1+1은?"
+                },
+                {
+                    "boundingBox": {
+                        "vertices": [
+                            {
+                                "x": 44,
+                                "y": 58
+                            },
+                            {
+                                "x": 170,
+                                "y": 59
+                            },
+                            {
+                                "x": 170,
+                                "y": 74
+                            },
+                            {
+                                "x": 44,
+                                "y": 73
+                            }
+                        ]
+                    },
+                    "confidence": 0,
+                    "id": 1,
+                    "text": "너무포괄적이다��"
+                }
+            ]
+        }
+    ],
+    "stored": true,
+    "text": "1+1은? \n너무포괄적이다��"
+}
