@@ -2,6 +2,7 @@ import json
 from openai import OpenAI
 import google.generativeai as genai
 import jsonlines
+import argparse
 
 openai_api_key = "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"
 upstage_api_key = "ZoRB5ymHqf1a9jd6LPwx3wVj1A4DWTzJ"
@@ -100,10 +101,13 @@ def make_gemini_prompt(title, conversation):
     return instruction
 
 
-def main():
-    chatgpt = ChatGPT(openai_api_key)
-    solar = Solar(upstage_api_key)
-    gemini = Gemini(google_api_key)
+def main(args):
+    if args.chatgpt:
+        chatgpt = ChatGPT(openai_api_key)
+    if args.solar:
+        solar = Solar(upstage_api_key)
+    if args.gemini:
+        gemini = Gemini(google_api_key)
 
     if DEBUG:
         messages = [
@@ -137,21 +141,29 @@ def main():
             print(f"[정답] {d['user_intent']}")
 
             messages = make_chatgpt_prompt(d["title"], d["conversation"])
-            chatgpt_resp = chatgpt.request(messages)
-            print(f"[ChatGPT] {chatgpt_resp}")
-            d["chatgpt"] = chatgpt_resp
+            if chatgpt:
+                chatgpt_resp = chatgpt.request(messages)
+                print(f"[ChatGPT] {chatgpt_resp}")
+                d["chatgpt"] = chatgpt_resp
 
-            solar_resp = solar.request(messages)
-            print(f"[Solar] {solar_resp}")
-            d["solar"] = solar_resp
+            if args.solar:
+                solar_resp = solar.request(messages)
+                print(f"[Solar] {solar_resp}")
+                d["solar"] = solar_resp
 
-            gemini_message = make_gemini_prompt(d["title"], d["conversation"])
-            gemini_resp = gemini.request(gemini_message)
-            print(f"[Gemini] {gemini_resp}")
-            d["gemini"] = gemini_resp
+            if args.gemini:
+                gemini_message = make_gemini_prompt(d["title"], d["conversation"])
+                gemini_resp = gemini.request(gemini_message)
+                print(f"[Gemini] {gemini_resp}")
+                d["gemini"] = gemini_resp
 
             fw.write(d)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--chatgpt", action="store_true")
+    parser.add_argument("--solar", action="store_true")
+    parser.add_argument("--gemini", action="store_true")
+    args = parser.parse_args()
+    main(args)
