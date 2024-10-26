@@ -4,9 +4,9 @@ import google.generativeai as genai
 import jsonlines
 import argparse
 
-openai_api_key = "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"
-upstage_api_key = "ZoRB5ymHqf1a9jd6LPwx3wVj1A4DWTzJ"
-google_api_key = "AIzaSyBSuMvTUyAL2uP9Cr0ZM38AmuZVfLo4Smo"
+openai_api_key = ""
+upstage_api_key = ""
+google_api_key = ""
 
 DEBUG = False
 
